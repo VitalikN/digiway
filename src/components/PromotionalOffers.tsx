@@ -49,7 +49,7 @@ const PromotionalOffers = () => {
               <SwiperSlide className={s.slide}>
                 <img
                   height={dynamicHeight}
-                  src="../../public/rectangle.png"
+                  src={'/rectangle.png'}
                   alt="rectangle"
                 />
                 <p className={s.offer__title__text}>
@@ -67,7 +67,7 @@ const PromotionalOffers = () => {
               <SwiperSlide>
                 <img
                   height={dynamicHeight}
-                  src="../../public/rectangle.png"
+                  src={'/rectangle.png'}
                   alt="rectangle"
                 />
                 <p className={s.offer__title__text}>
@@ -85,7 +85,7 @@ const PromotionalOffers = () => {
               <SwiperSlide>
                 <img
                   height={dynamicHeight}
-                  src="../../public/rectangle.png"
+                  src={'/rectangle.png'}
                   alt="rectangle"
                 />
                 <p className={s.offer__title__text}>
