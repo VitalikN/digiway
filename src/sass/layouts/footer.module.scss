@@ -3,22 +3,63 @@
 
 .container__footer {
   padding-top: 116px;
+  padding-bottom: 55px;
+  @include mediaQuery(1280px) {
+    @include flex();
+  }
 }
 
 .visa__box {
   max-width: 295px;
+  @include mediaQuery(1280px) {
+    margin-right: 32px;
+  }
 }
 .visa__text {
+  padding-bottom: 15px;
+  @include font(12px, 2vw, 12px, 400, 18px);
+}
+.nas__box__text {
+  @include mediaQuery(1280px) {
+    @include flex();
+  }
 }
 .nas__box {
 }
 .list {
+  @include flex();
+  gap: 15px;
 }
 .list__item__title {
+  color: #cc8e1e;
+  @include font(12px, 2vw, 12px, 400, 18px);
 }
 .text {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  @include font(14px, 2vw, 14px, 500, 21px);
 }
 .box__link {
+  @include flex();
+  gap: 20px;
 }
-.link {
+.link__svg {
+  fill: #2b3f5b;
+  transition: all 0.3s;
+
+  &:hover {
+    fill: rgba(204, 142, 30, 1);
+  }
+}
+.list__polityka {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include mediaQuery(1280px) {
+    margin-left: auto;
+  }
+}
+.list__item__link {
+  color: #cc8e1e;
+  @include font(12px, 2vw, 12px, 400, 18px);
 }

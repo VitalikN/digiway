@@ -1,5 +1,5 @@
-import s from "../sass/layouts/hero.module.scss";
-import SVGIcon from "./SVGIcon";
+import s from '../sass/layouts/hero.module.scss';
+import SVGIcon from './SVGIcon';
 
 const HeroSection = () => {
   return (
@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className={s.box__img}>
           <img
             className={s.img}
-            src="../../public/image.png"
+            src={'/image.png'}
             alt="top_image"
             width={440}
             height={440}

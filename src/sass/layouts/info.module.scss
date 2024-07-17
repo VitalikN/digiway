@@ -26,6 +26,11 @@
   padding-top: 13px;
   padding-bottom: 18px;
   @include font(26px, 2vw, 32px, 400, 35px);
+  transition: all 0.3s;
+
+  &:hover {
+    color: #cc8e1e;
+  }
 }
 .info__text {
   @include font(12px, 2vw, 12px, 400, 18px);
@@ -49,4 +54,10 @@
 .link {
   cursor: pointer;
   fill: #cc8e1e;
+
+  transition: all 0.3s;
+
+  &:hover {
+    fill: #2b3f5b;
+  }
 }

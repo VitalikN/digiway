@@ -18,7 +18,7 @@
 }
 
 body {
-  /* font-family: Inter; */
+  font-family: Inter Display;
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);

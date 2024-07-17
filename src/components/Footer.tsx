@@ -13,57 +13,64 @@ const Footer = () => {
           </p>
           <SVGIcon iconId="visa" width="68" height="18" className={s.visa} />
         </div>
-        <div className={s.nas__box}>
-          <ul className={s.list}>
-            <li className={s.list__item}>
-              <h3 className={s.list__item__title}>O nas</h3>
-            </li>
-            <li className={s.list__item}>
-              <h3 className={s.list__item__title}>Usługi</h3>
-            </li>
-            <li className={s.list__item}>
-              <h3 className={s.list__item__title}>Blog</h3>
-            </li>
-            <li className={s.list__item}>
-              <h3 className={s.list__item__title}>Praca</h3>
-            </li>
-            <li className={s.list__item}>
-              <h3 className={s.list__item__title}>Cennik</h3>
-            </li>
-          </ul>
-          <p className={s.text}>Lokalizacja</p>
-          <div className={s.box__link}>
-            <a href="#" target="_blank">
-              <SVGIcon iconId="ins" width="24" height="24" className={s.link} />
-            </a>
-            <a href="#" target="_blank">
-              <SVGIcon
-                iconId="facebook"
-                width="24"
-                height="24"
-                className={s.link}
-              />
-            </a>
-            <a href="#" target="_blank">
-              <SVGIcon
-                iconId="linkedin"
-                width="24"
-                height="24"
-                className={s.link}
-              />
-            </a>
-            <a href="#" target="_blank">
-              <SVGIcon
-                iconId="youtube"
-                width="24"
-                height="24"
-                className={s.link}
-              />
-            </a>
+        <div className={s.nas__box__text}>
+          <div className={s.nas__box}>
+            <ul className={s.list}>
+              <li className={s.list__item}>
+                <h3 className={s.list__item__title}>O nas</h3>
+              </li>
+              <li className={s.list__item}>
+                <h3 className={s.list__item__title}>Usługi</h3>
+              </li>
+              <li className={s.list__item}>
+                <h3 className={s.list__item__title}>Blog</h3>
+              </li>
+              <li className={s.list__item}>
+                <h3 className={s.list__item__title}>Praca</h3>
+              </li>
+              <li className={s.list__item}>
+                <h3 className={s.list__item__title}>Cennik</h3>
+              </li>
+            </ul>
+            <p className={s.text}>Lokalizacja</p>
+            <div className={s.box__link}>
+              <a href="#" target="_blank">
+                <SVGIcon
+                  iconId="ins"
+                  width="24"
+                  height="24"
+                  className={s.link__svg}
+                />
+              </a>
+              <a href="#" target="_blank">
+                <SVGIcon
+                  iconId="facebook"
+                  width="24"
+                  height="24"
+                  className={s.link__svg}
+                />
+              </a>
+              <a href="#" target="_blank">
+                <SVGIcon
+                  iconId="linkedin"
+                  width="24"
+                  height="24"
+                  className={s.link__svg}
+                />
+              </a>
+              <a href="#" target="_blank">
+                <SVGIcon
+                  iconId="youtube"
+                  width="24"
+                  height="24"
+                  className={s.link__svg}
+                />
+              </a>
+            </div>
           </div>
+          <p className={s.text}>Skontaktuj się z nami</p>
         </div>
-        <p className={s.text}>Skontaktuj się z nami</p>
-        <ul className={s.list}>
+        <ul className={s.list__polityka}>
           <li className={s.list__item__link}>
             <a href="#">POLITYKA PRYWATNOŚCI</a>
           </li>
