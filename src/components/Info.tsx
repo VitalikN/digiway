@@ -1,4 +1,5 @@
 import s from '../sass/layouts/info.module.scss';
+import Networks from './Networks';
 import SVGIcon from './SVGIcon';
 const Info = () => {
   return (
@@ -26,33 +27,7 @@ const Info = () => {
             info@lorem.center
           </a>
           <div className={s.link__box}>
-            <a href="#" target="_blank">
-              <SVGIcon iconId="ins" width="24" height="24" className={s.link} />
-            </a>
-            <a href="#" target="_blank">
-              <SVGIcon
-                iconId="facebook"
-                width="24"
-                height="24"
-                className={s.link}
-              />
-            </a>
-            <a href="#" target="_blank">
-              <SVGIcon
-                iconId="linkedin"
-                width="24"
-                height="24"
-                className={s.link}
-              />
-            </a>
-            <a href="#" target="_blank">
-              <SVGIcon
-                iconId="youtube"
-                width="24"
-                height="24"
-                className={s.link}
-              />
-            </a>
+            <Networks />
           </div>
         </div>
       </div>
