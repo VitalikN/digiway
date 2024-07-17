@@ -1,7 +1,9 @@
+import s from '../sass/layouts/footer.module.scss';
+
 const Footer = () => {
   return (
     <footer>
-      <div>footer</div>
+      <div className={`${s.container} ${s.container__footer}`}>footer</div>
     </footer>
   );
 };
