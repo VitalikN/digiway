@@ -1,5 +1,5 @@
-@import "../utils/container";
-@import "../utils/mixins";
+@import '../utils/container';
+@import '../utils/mixins';
 
 .container__header {
   @include flex();

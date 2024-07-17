@@ -1,0 +1,43 @@
+@import '../utils/container';
+@import '../utils/mixins';
+@import '../layouts/header.module.scss';
+
+.container__offer {
+  padding-top: 116px;
+}
+.offer__title {
+  font-family: Oranienbaum;
+  @include font(40px, 2vw, 40px, 400, 48px);
+  text-transform: uppercase;
+  padding-bottom: 48px;
+}
+
+.container__swiper__form {
+  @include mediaQuery(1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.swiper__box {
+  max-width: 629px;
+  margin: 0 auto;
+  width: 100%;
+  @include mediaMaxQuery(1280px) {
+    margin-bottom: 20px;
+  }
+}
+
+.offer__title__text {
+  font-family: Oranienbaum;
+  @include font(32px, 2vw, 32px, 400, 40px);
+  color: #000000;
+  padding-top: 16px;
+}
+.offer__text {
+  @include font(14px, 2vw, 16px, 400, 24px);
+  padding: 16px 0;
+}
+.offer__link {
+  color: #cc8e1e;
+  @include font(14px, 2vw, 16px, 500, 24px);
+}

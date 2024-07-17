@@ -1,0 +1,112 @@
+@import '../utils/container';
+@import '../utils/mixins';
+
+.box {
+  box-sizing: border-box;
+  max-width: 413px;
+  border: 1px solid #cc8e1e;
+  padding: 26px 26px 40px 26px;
+  margin: 0 auto;
+}
+.title {
+  font-family: Oranienbaum;
+  @include font(24px, 2vw, 32px, 400, 40px);
+  padding-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.form__box {
+  position: relative;
+  max-width: 100%;
+}
+
+.label {
+  position: absolute;
+
+  top: 8px;
+  left: 16px;
+
+  padding: 0 4px;
+  @include font(10px, 2vw, 10px, 400, 10px);
+  color: #646e7c;
+  &.invalid {
+    color: #b3261e;
+  }
+}
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cc8e1e;
+  border-radius: 10px;
+  padding: 18px 16px 8px 16px;
+  outline: none;
+  background-color: transparent;
+  @include font(14px, 2vw, 16px, 400, 24px);
+  color: #2b3f5b;
+  &.valid {
+    border-color: #cc8e1e;
+  }
+
+  &.invalid {
+    border-color: #b3261e;
+  }
+}
+
+.form__box__checkbox {
+  padding-bottom: 24px;
+}
+
+.checkboxLabel {
+  position: relative;
+
+  display: flex;
+  cursor: pointer;
+  @include font(14px, 2vw, 16px, 400, 19px);
+
+  .checkbox {
+    appearance: none;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid #b6bbc3;
+    border-radius: 5px;
+    margin-right: 4px;
+    position: relative;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:checked + .chip__checkbox {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 11px;
+    }
+  }
+
+  .chip__checkbox {
+    display: none;
+  }
+}
+
+.styledBtn {
+  padding: 15px 20px 15px 20px;
+  background: #cc8e1e;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  width: 100%;
+  @include font(14px, 2vw, 16px, 500, 19px);
+}

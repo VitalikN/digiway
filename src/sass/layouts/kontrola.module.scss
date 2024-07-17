@@ -1,0 +1,64 @@
+@import '../utils/container';
+@import '../utils/mixins';
+
+.kontrola {
+  padding: 194px 40px 116px 40px;
+}
+
+.title {
+  position: relative;
+
+  max-width: 735px;
+  margin: 0 auto;
+  font-family: Oranienbaum;
+  color: #cc8e1e;
+  @include font(30px, 2vw, 50px, 400, 30px);
+
+  @include mediaQuery(768px) {
+    @include font(40px, 2vw, 60px, 400, 50px);
+  }
+  @include mediaQuery(1280px) {
+    @include font(70px, 2vw, 82px, 400, 123px);
+  }
+}
+.title__span {
+  position: absolute;
+  top: 25px;
+  left: -9px;
+  @include mediaQuery(768px) {
+    top: 35px;
+    left: -15px;
+  }
+  @include mediaQuery(1280px) {
+    top: 55px;
+    left: -15px;
+  }
+
+  color: #000000;
+}
+.title__span__stanu {
+  position: absolute;
+  top: 50px;
+  left: 75px;
+  @include mediaQuery(768px) {
+    top: 70px;
+    left: 100px;
+  }
+  @include mediaQuery(1280px) {
+    top: 110px;
+    left: 185px;
+  }
+}
+.logo__box {
+  position: absolute;
+  top: -60px;
+  left: 15%;
+  @include mediaQuery(768px) {
+    top: -50px;
+  }
+  @include mediaQuery(1280px) {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}

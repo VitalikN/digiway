@@ -1,21 +1,16 @@
-import SVGIcon from "./SVGIcon";
-import s from "../sass/layouts/header.module.scss";
-import ThemeSwitcher from "./ThemeSwitcher";
-import BurgerMenu from "./BurgerMenu";
-import LinkButton from "./LinkButton";
+import SVGIcon from './SVGIcon';
+import s from '../sass/layouts/header.module.scss';
+import ThemeSwitcher from './ThemeSwitcher';
+import BurgerMenu from './BurgerMenu';
+import LinkButton from './LinkButton';
+import Logo from './Logo';
 
 const Header = () => {
   return (
     <header>
       <div className={`${s.container} ${s.container__header}`}>
-        <a href="/" className={s.logo}>
-          <SVGIcon
-            iconId="logo"
-            width="67"
-            height="63"
-            className="logo__chip"
-          />
-        </a>
+        <Logo />
+
         <nav className={s.nav}>
           <ul className={s.nav__list}>
             <li className={s.nav__list__item}>
