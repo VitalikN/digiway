@@ -72,19 +72,29 @@ const Footer = () => {
         </div>
         <ul className={s.list__polityka}>
           <li className={s.list__item__link}>
-            <a href="#">POLITYKA PRYWATNOŚCI</a>
+            <a className={s.item__link} href="#">
+              Polityka prywatności
+            </a>
           </li>
           <li className={s.list__item__link}>
-            <a href="#">REGULAMIN</a>
+            <a className={s.item__link} href="#">
+              Regulamin
+            </a>
           </li>
           <li className={s.list__item__link}>
-            <a href="#">PRZYGOTOWANIE DO BADAŃ</a>
+            <a className={s.item__link} href="#">
+              Przygotowanie do badań
+            </a>
           </li>
           <li className={s.list__item__link}>
-            <a href="#">INFORMACJA O PRAWACH PACJENTA</a>
+            <a className={s.item__link} href="#">
+              Informacja o prawach pacjenta
+            </a>
           </li>
           <li className={s.list__item__link}>
-            <a href="#">POLITYKA COOKIE</a>
+            <a className={s.item__link} href="#">
+              Polityka cookie
+            </a>
           </li>
         </ul>
       </div>

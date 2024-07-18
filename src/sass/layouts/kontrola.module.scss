@@ -3,12 +3,14 @@
 
 .kontrola {
   padding: 194px 40px 194px 40px;
+  @include flexCenter();
 }
 
 .title {
   position: relative;
 
   max-width: 735px;
+  min-width: 300px;
   margin: 0 auto;
   font-family: Oranienbaum;
   color: #cc8e1e;
@@ -16,6 +18,7 @@
 
   @include mediaQuery(768px) {
     @include font(40px, 2vw, 60px, 400, 50px);
+    min-width: 400px;
   }
   @include mediaQuery(1280px) {
     @include font(70px, 2vw, 82px, 400, 123px);
@@ -52,7 +55,7 @@
 .logo__box {
   position: absolute;
   top: -60px;
-  left: 15%;
+  left: 30%;
   @include mediaQuery(768px) {
     top: -50px;
   }
