@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import ContactForm from './ContactForm';
+import SVGIcon from './SVGIcon';
 
 const PromotionalOffers = () => {
   const [dynamicHeight, setDynamicHeight] = useState(294);
@@ -40,7 +41,10 @@ const PromotionalOffers = () => {
         <div className={` ${s.container__swiper__form} `}>
           <div className={s.swiper__box}>
             <Swiper
-              //   navigation={true}
+              navigation={{
+                nextEl: '.swiper__button__next',
+                prevEl: '.swiper__button__prev',
+              }}
               modules={[Navigation]}
               className="mySwiper"
               loop={true}
@@ -101,6 +105,26 @@ const PromotionalOffers = () => {
                 </a>
               </SwiperSlide>
             </Swiper>
+            <div
+              className={`${s.swiperButton} ${s.swiperButtonPrev} swiper__button__prev`}
+            >
+              <SVGIcon
+                iconId="arrow-left"
+                width="22"
+                height="22"
+                className={`${s.swiper__button__left} ${s.swiper__icon}`}
+              />
+            </div>
+            <div
+              className={`${s.swiperButton} ${s.swiperButtonNext} swiper__button__next`}
+            >
+              <SVGIcon
+                iconId="arrow-right"
+                width="22"
+                height="22"
+                className={`${s.swiper__button__right} ${s.swiper__icon}`}
+              />
+            </div>
           </div>
           <div>
             <ContactForm />

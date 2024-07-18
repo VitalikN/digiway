@@ -10,6 +10,9 @@
   @include font(40px, 2vw, 40px, 400, 48px);
   text-transform: uppercase;
   padding-bottom: 48px;
+  @include mediaMaxQuery(900px) {
+    padding-bottom: 90px;
+  }
 }
 
 .container__swiper__form {
@@ -40,4 +43,66 @@
 .offer__link {
   color: #cc8e1e;
   @include font(14px, 2vw, 16px, 500, 24px);
+}
+.mySwiper {
+  .swiper__button__prev,
+  .swiper__button__next {
+    display: none;
+  }
+}
+
+.swiper__box {
+  position: relative;
+
+  @include mediaQuery(901px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .swiper__button__prev,
+  .swiper__button__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .swiper__button__prev {
+    left: 40px;
+  }
+
+  .swiper__button__next {
+    right: 40px;
+  }
+}
+.swiperButton {
+  cursor: pointer;
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #f1efe9;
+  @include flexCenter();
+}
+.swiperButtonPrev {
+  @include mediaMaxQuery(900px) {
+    top: -22%;
+    right: 100px;
+  }
+  @include mediaQuery(901px) {
+    left: 0;
+  }
+  top: 40%;
+
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+}
+.swiperButtonNext {
+  @include mediaMaxQuery(900px) {
+    top: -22%;
+  }
+  right: 0;
+  top: 40%;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
 }
